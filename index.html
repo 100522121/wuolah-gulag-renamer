@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Renombrador de ficheros</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    </head>
+
+    <body>
+        <h1>Renombrador Wuolah y Gulag Cleaner</h1>
+        <div id="dropZone">
+            Arrastra archivos aquí o haz clic para seleccionarlos
+        </div>
+
+        <input type="file" id="fileInput" multiple hidden>
+
+        <table id="fileTable">
+            <thead>
+                <tr>
+                    <th>Nombre original</th>
+                    <th>Nombre nuevo</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <button id="downloadBtn">
+            Descargar ZIP
+        </button>
+        <script src="script.js"></script>
+    </body>
+</html>
